@@ -1,0 +1,55 @@
+
+.maroon {
+    background-color: rgb(71, 31, 2);
+    text-align: center;
+    color: snow;
+    width: 70%;
+
+}
+.beige {
+    background-color: rgb(241, 237, 171);
+    text-align: left;
+    color: black;
+    width: 70%;
+
+}
+div{
+    display: block;
+}
+#X {
+
+}
+#Y {
+    
+}
+.split {
+    float: left;
+    width:50%;
+}
+.split1{
+    float: left;
+    width: 33.33%;
+}
+.split2{
+    text-align: center;
+    width: 33.33%;
+}
+.split3{
+    float: right;
+    width: 33.33%;
+}
+.colorblue{
+    color: blue;
+}
+.split4 {
+    float: left;
+    width:25%;
+}
+.split5 {
+    float: right;
+    width:50%;
+}
+.column {
+    float: left;
+    width: 20%;
+}
