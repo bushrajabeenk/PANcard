@@ -5,20 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel = "stylesheet" href="PanCard.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
 </head>
 <body>
     
-        
             <div class="maroon">
                <label>Request For New Pan Card Or/And Changes Or Correction in PAN Data</label>
-               <br>
-               <label>Fields marked with * (asterisk) are mandatory. To avoid mistake(s), please refer guidelines and instructions</label>
+               <label style="font-style: italic;">Fields marked with * (asterisk) are mandatory. To avoid mistake(s), please 
+                refer <span id="Y">guidelines</span> and <span id="Y">instructions</span></label>
             </div>
         
           <div class="beige">
                 <label class="split4" >Whether citizen of India  </label>
                 <input type = "radio">Yes</input>
                 <input type = "radio">No</input>
+                <br>
                 <br>
                 <label>Permenant Account Number(PAN)</label>
                 <input></input>
@@ -30,60 +32,91 @@
                 <input type = "radio">Smt/Mrs</input>
                 <input type = "radio">Kumari/Ms</input>
                 <br>
-                <label class ="split1">Last Name/Surname</label>
-                <label class ="split2">First Name</label>
-                <label class ="split3">Middle Name</label>
+          <div class="row">
+              <div class="col-4">
+                <label >Last Name/Surname</label>
                 <br>
-                <input class="" type = "text"></input>
-                <input class="" type = "text"></input>
-                <input class="" type = "text"></input>
+                <input name="sname1" type = "text" id="sname1"></input>
+              </div>
+              <div class="col-4">
+                <label >First Name</label>
                 <br>
-                <label>Name as you would like it printed on the card</label>
-                <label class="colorblue">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc are not allowed)</label>
+                <input name="sname2" type = "text" id="sname2"></input>
+              </div>
+              <div class="col-4">
+                <label >Middle Name</label>
                 <br>
-                <input class = "" type = "text"></input>
+                <input name="sname3" type = "text" id="sname3"></input>
+              </div>
+          </div>
+            
+                <label for="textt">Name as you would like it printed on the card<span style="color: blue;">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, 
+                    M/s, Alias etc are not allowed)</span></label>
                 <br>
-                <label>Details of Parents.</label>
-                <label class="colorblue">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, Alias etc are not allowed)</label>
+                <input id="textt" name="textt" style="width: 280px;"></input>
                 <br>
-                <label class="split">Whether mother is single parent and you wish to apply for PAN by furnishing the name of your mother only</label>
+                <label>Details of Parents.<span style="color: blue;">(Prefix like Shri, Smt, Kumari, Late, Dr, CA, Ms, Mr, Mrs, M/s, 
+                    Alias etc are not allowed)</span></label>
+                <br>
+                <label class="split">Whether mother is single parent and you wish to apply for PAN by furnishing
+                     the name of your mother only.</label>
                 <input type = "radio">Yes</input>
-                <input type = "radio">No</input>
-                <br>  
+                <input type = "radio" checked>No</input>
+                <br> 
                 <br>
+                <br> 
                 
                 <label>Father's Name</label>
-                <label class="colorblue"> (Mandatory field. Even married women should give father's name only.)</label>
-                <br>
+                <label style="color: blue;"> (Mandatory field. Even married women should give father's name only.)</label>
                 
-                <label class ="split1">Last Name/Surname</label>
-                <label class ="split2">First Name</label>
-                <label class ="split3">Middle Name</label>
+        <div class="row">
+            <div class="col-4">
+                <label for="fname1">Last Name/Surname</label>
                 <br>
-                
-                <input style="padding: 15%;" type = "text"></input>
-                <input style="width: 15%;" type = "text"></input>
-                <input style="width: 15%;" type = "text"></input>
+                <input name="fname1" type = "text" id="fname1" ></input>
+            </div>
+            <div class="col-4"> 
+                <label for="fname2" >First Name</label>
+                <br>
+                <input name="fname2" type = "text"  id="fname2" ></input>
+            </div>
+            <div class="col-4">
+                <label for="fname3" >Middle Name</label>
+                <br>
+                <input name="fname3" type = "text"  id="fname3" ></input>
+            </div>
+        </div>
+
             
-                <br>
                 <label>Mother's Name</label>
-                <label> (This field is optional.)</label>
+                <label  style="color: blue;"> (This field is optional.)</label>
                 <br>
-                <label class ="split1" >Last Name/Surname</label>
-                <label class ="split2">First Name</label>
-                <label class ="split3">Middle Name</label>
+        <div class="row">
+            <div class="col-4">
+                <label for="mname1">Last Name/Surname</label>
                 <br>
-                <input  type = "text"></input>
-                <input  type = "text"></input>
-                <input  type = "text"></input>
+                <input name="mname1" type = "text" id="mname1"></input>
+            </div>
+            <div class="col-4">
+                <label for="mname2">First Name</label>
                 <br>
+                <input name="mname2" type = "text" id="mname2"></input>
+            </div>
+            <div class="col-4">
+                <label for="mname3">Middle Name</label>
+                <br>
+                <input name="mname3" type = "text" id="mname3"></input>
+            </div>
+        </div>
+                
                 <label class = "split">4.Select Parent name which is to be printed on the card</label>
                 <input type= "radio" >Father Name</input>
                 <input type= "radio">Mother Name</input>
                 <br>
                 <label class="colorblue">(In case no option is provided then PAN card will be issued with father's name)</label>
                 <br>
-                <label class = "split" >5.Date of Birth/Incorporation/Agreement/Partnership or Trust Deed/Formation of Body of Individuals/Association of Persons</label>
+                <label class = "split" >5.Date of Birth/Incorporation/Agreement/Partnership or Trust Deed/Formation 
+                    of Body of Individuals/Association of Persons</label>
                 <label>DD</label>
                 <label>MM</label>
                 <label>YYYY</label>
@@ -102,6 +135,7 @@
                 <input type = "radio">Male</input>
                 <input type = "radio">Female</input>
                 <input type = "radio">Transgender</input>
+                <br>
                 <br>
                 <label>7.Photo Mismatch</label>
                 <br>
@@ -143,7 +177,8 @@
                 <br>
                 <input></input>
                 <br>
-                <label>10.If you desire to update your other address, give required details and Submit proof of other address also.</label>
+                <label>10.If you desire to update your other address, give required details and Submit 
+                    proof of other address also.</label>
                 <br>
                 <label class="split5">Country code(ISD code)</label>
                 <br>
@@ -175,32 +210,49 @@
                 <input class="split5"></input>
                 <label class="split">12.AADHAAR Number</label>
                 <br>
-                <label class="split5">In case aadhaar number is provided, then proof of aadhaar along with supporting documents is to be submitted to NSDL</label>
+                <label class="split5"><span style="font-style: italic;">In case aadhaar number is provided, then proof of aadhaar along with 
+                    supporting documents is to be submitted to NSDL</span></label>
+                <br>
                 <br>
                 <br>
                 <label >Name as per AADHAAR letter</label>
+                <input class="split3"></input>
                 <br>
                 <label class="split" >or</label>
-                <input></input>
+                <br>
                 <br>
                 <label class="split">as per the enrollment id of Aadhaar application form</label>
+                <br>
                 <br>
                 <label class="split">13.GSTN</label>
                 <input></input>
                 <br>
-                <label>14.Mention other Permanant Account Numbers(PAN)if any inadvertently allotted to you. Submit proof of surrendered PANs along with the application.</label>
+                <label><b>14.Mention other Permanant Account Numbers(PAN)if any inadvertently allotted to you. 
+                    Submit proof of surrendered PANs along with the application.</b></label>
                 <br>
-                <label  class="split">PAN1</label>
-                <input></input>
-                <br>
-                <label  class="split">PAN2</label>
-                <input></input>
-                <br>
-                <label  class="split">PAN3</label>
-                <input></input>
-                <br>
-                <label  class="split">PAN4</label>
-                <input></input>
+          <div class="row">
+            <div class="col-6">
+                <label for="pan1">PAN1</label>
+                <input name="pan1" type="" id="pan1"></input>
+            </div>
+                
+            <div class="col-6">
+                <label for="pan2">PAN2</label>
+                <input name="pan2" type="" id="pan2"></input>
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-6">
+                <label for="pan3">PAN3</label>
+                <input name="pan3" type="" id="pan3"></input>
+            </div>
+                
+            <div class="col-6">
+                <label for="pan4">PAN4</label>
+                <input name="pan4" type="" id="pan4"></input>
+            </div>
+          </div>
                 <br>
                 <label>15.Verification</label>
                 <br>
@@ -208,7 +260,7 @@
                 <input style="width: 40%;"></input>
                 <label>the applicant in the capacity of,</label>
                 <select>
-                    <option style="width: 30%;" value="">--Please Select--</option>
+                    <option style="width: 30%;" value="" >--Please Select--</option>
                 </select>
                 <label>do hereby declare that what is stated above is true to the best of my information and belief</label>
                 <br>
@@ -273,72 +325,65 @@
                 </select>
                 <label>Guidelines for DSC user</label>
                 <br>
-                <label style="width: 33%;">Upload Photo</label>
-                <button style="width: 15%;">Choose File</button>
+                <div class="row">
+                    <div class="col-4">
+                <label>Upload Photo</label>
+            </div>
+            <div class="col-4">
+                <button style="width: 40%;">Choose File</button>
                 <label>No file chosen</label>
-                <label style="width: 33%;">Upload Signature</label>
-                <button style="width: 15%;">Choose File</button>
+            </div>
+            <div class="col-4">
+                <label>Upload Signature</label>
+                <button style="width: 40%;">Choose File</button>
                 <label>No file chosen</label>
+            </div>
+            </div>
                 <br>
-                <label style="width: 33%;">Upload Document</label>
-                <button style="width: 15%;">Choose File</button>
+                <div class="row">
+                    <div class="col-4">
+                <label>Upload Document</label>
+            </div>
+            <div class="col-8">
+                <button style="width: 20%;">Choose File</button>
                 <label>No file chosen</label>
+            </div>
+                </div>
                 <label>OR</label>
                 <br>
                 <button style="width: 15%;">Fetch fom DigiLocker</button>
                 <br>
-                <label>ALREADY UPLOADED PHOTO</label>
-                <input style="width: 30%;"></input>
-                <br>
-                <label>ALREADY UPLOADED SIGNATURE</label>
-                <input style="width: 30%;"></input>
-                <br>
-                <label>ALREADY UPLOADED DOCUMENTS</label>
-                <input style="width: 30%;"></input>
-                <br>
-                <input type="submit"></input>
-     
-                
-                
-
-               
-
-                
-                            
-                
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        
-        
-
-
-
-
-
-
-
+                <div class="row">
+                <div class="col-4">
+                <label>ALREADY UPLOADED PHOTO:</label>
+            </div>
+            <div class="col-8">
+                <input style="width: 40%;"></input>
+            </div>
         </div>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                <label>ALREADY UPLOADED SIGNATURE:</label>
+            </div>
+            <div class="col-8">
+                <input style="width: 30%;"></input>
+            </div>
+        </div>
+                <br>
+                <div class="row">
+                    <div class="col-4">
+                <label>ALREADY UPLOADED DOCUMENTS:</label>
+            </div>
+            <div class="col-8">
+                <input class="split2"></input>
+            </div>
+        </div>
+                <br>
+                <br>
+                <br>
+<input class="X" type="submit" ></input>
+</div>
     
 </body>
 </html>
