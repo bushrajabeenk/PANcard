@@ -1,10 +1,10 @@
 
 .maroon {
-    background-color: rgb(71, 31, 2);
+    background-color: rgb(121, 14, 14);
     text-align: center;
     color: snow;
     width: 70%;
-
+    height: 60px;
 }
 .beige {
     background-color: rgb(241, 237, 171);
@@ -16,31 +16,36 @@
 div{
     display: block;
 }
-#X {
+.X {
+    background-color: rgb(218, 213, 213);
+    text-align: center;
+    display: flex;
+    display: grid;
+    justify-content: center;
+    margin: auto;
 
 }
 #Y {
+    color: orange;
+    text-decoration: underline;
     
 }
 .split {
     float: left;
     width:50%;
-}
-.split1{
-    float: left;
-    width: 33.33%;
+
 }
 .split2{
-    text-align: center;
-    width: 33.33%;
+    width: 60%;
+    height:260%;
 }
 .split3{
     float: right;
-    width: 33.33%;
+    width: 50%;
 }
-.colorblue{
-    color: blue;
-}
+
+
+
 .split4 {
     float: left;
     width:25%;
